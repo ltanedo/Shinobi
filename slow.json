@@ -1,0 +1,684 @@
+[
+  {
+    "request": {
+      "url": "https://api.nasdaq.com/api/marketmovers?assetclass=stocks&exchangeStatus=currentMarket&limit=5",
+      "params": {
+        "assetclass": "stocks",
+        "exchangeStatus": "currentMarket",
+        "limit": "5"
+      },
+      "headers": {
+        "content-type": "application/json; charset=utf-8",
+        "server": "Kestrel",
+        "lang": "en",
+        "srctype": "default",
+        "rid": "2e345164-97aa-46d2-8a06-8e356a0f8acc",
+        "cache-hit": "3004",
+        "gid": "201",
+        "content-encoding": "gzip",
+        "content-length": "1117",
+        "x-edgeconnect-midmile-rtt": "39",
+        "x-edgeconnect-origin-mex-latency": "83",
+        "expires": "Sat, 03 Aug 2024 09:15:59 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "pragma": "no-cache",
+        "date": "Sat, 03 Aug 2024 09:15:59 GMT",
+        "vary": "Accept-Encoding",
+        "set-cookie": "ak_bmsc=32F22196799CF4E270B21F670EBA2627~000000000000000000000000000000~YAAQec/bF/CQWAWRAQAADj+GFxjF+OyZKBLjNEuRU/C6Mv5HP8Nj70pnwyWqrUA38ELnBnpvCA6rDsusZQ/HAbSKz+syM0RQ6Vg2zjYVEQJePwXStcdGKsDRAKVZ69g2GuEVjMJOfSJIKZUyrtuXQpilEOkVn7Z/2QtIn+DrUbQLivTtzgJNZYFfdEwiqiJIsmCH2YCtZ6CdplXH2Rnr5UgY27Ulw4lHUTMudvYM+4Yv5PCDXjPKyC6bZB/AWDvs47cbVnZcqY9hp/TTcnXRQf7+u3ABytWOFnHs7g9rTYiJifkDnqWTZ0zw4SxgrUVh6w7VrOBu8+enNgmterfSi2OWruOPb+QMR0dyZZtXeFOYxMFutTRCJx56v7pZ4rDbaftQAfPmIDzUYg==; Domain=.nasdaq.com; Path=/; Expires=Sat, 03 Aug 2024 11:15:59 GMT; Max-Age=7200; HttpOnly",
+        "access-control-allow-origin": "https://www.nasdaq.com",
+        "strict-transport-security": "max-age=86400"
+      }
+    },
+    "response": {
+      "data": {
+        "STOCKS": {
+          "MostActiveByShareVolume": {
+            "dataAsOf": "Data as of Aug 2, 2024 1:25 PM ET",
+            "lastTradeTimestamp": "Aug 2, 2024 1:25 PM ET",
+            "table": {
+              "asOf": null,
+              "headers": {
+                "symbol": "Symbol",
+                "name": "Name",
+                "lastSalePrice": "Last",
+                "lastSaleChange": "Change",
+                "change": "Share Volume"
+              },
+              "rows": [
+                {
+                  "symbol": "NVDA",
+                  "name": "NVIDIA Corporation",
+                  "lastSalePrice": "$105.41",
+                  "lastSaleChange": "-3.79",
+                  "change": "300,848,788",
+                  "deltaIndicator": "down"
+                },
+                {
+                  "symbol": "INTC",
+                  "name": "Intel Corporation",
+                  "lastSalePrice": "$21.21",
+                  "lastSaleChange": "-7.83",
+                  "change": "193,470,642",
+                  "deltaIndicator": "down"
+                },
+                {
+                  "symbol": "AMZN",
+                  "name": "Amazon.com, Inc.",
+                  "lastSalePrice": "$165.78",
+                  "lastSaleChange": "-18.29",
+                  "change": "92,195,123",
+                  "deltaIndicator": "down"
+                },
+                {
+                  "symbol": "AAPL",
+                  "name": "Apple Inc.",
+                  "lastSalePrice": "$225.10",
+                  "lastSaleChange": "+6.74",
+                  "change": "57,161,550",
+                  "deltaIndicator": "up"
+                },
+                {
+                  "symbol": "TSLA",
+                  "name": "Tesla, Inc.",
+                  "lastSalePrice": "$207.80",
+                  "lastSaleChange": "-9.06",
+                  "change": "51,702,392",
+                  "deltaIndicator": "down"
+                }
+              ]
+            }
+          },
+          "MostAdvanced": {
+            "dataAsOf": "Data as of Aug 2, 2024 12:42 PM ET",
+            "lastTradeTimestamp": "Aug 2, 2024 12:42 PM ET",
+            "table": {
+              "asOf": null,
+              "headers": {
+                "symbol": "Symbol",
+                "name": "Name",
+                "lastSalePrice": "Last",
+                "lastSaleChange": "Change",
+                "change": "% Change"
+              },
+              "rows": [
+                {
+                  "symbol": "MKDW",
+                  "name": "MKDWELL Tech Inc.",
+                  "lastSalePrice": "$3.30",
+                  "lastSaleChange": "+1.22",
+                  "change": "+58.65%",
+                  "deltaIndicator": "up"
+                },
+                {
+                  "symbol": "TENK",
+                  "name": "TenX Keane Acquisition",
+                  "lastSalePrice": "$13.76",
+                  "lastSaleChange": "+2.37",
+                  "change": "+20.85%",
+                  "deltaIndicator": "up"
+                },
+                {
+                  "symbol": "TNDM",
+                  "name": "Tandem Diabetes Care, Inc.",
+                  "lastSalePrice": "$42.11",
+                  "lastSaleChange": "+6.90",
+                  "change": "+19.6%",
+                  "deltaIndicator": "up"
+                },
+                {
+                  "symbol": "IAS",
+                  "name": "Integral Ad Science Holding Corp.",
+                  "lastSalePrice": "$11.30",
+                  "lastSaleChange": "+1.38",
+                  "change": "+13.96%",
+                  "deltaIndicator": "up"
+                },
+                {
+                  "symbol": "WLDN",
+                  "name": "Willdan Group, Inc.",
+                  "lastSalePrice": "$37.42",
+                  "lastSaleChange": "+4.24",
+                  "change": "+12.78%",
+                  "deltaIndicator": "up"
+                }
+              ]
+            }
+          },
+          "MostDeclined": {
+            "dataAsOf": "Data as of Aug 2, 2024 12:55 PM ET",
+            "lastTradeTimestamp": "Aug 2, 2024 12:55 PM ET",
+            "table": {
+              "asOf": null,
+              "headers": {
+                "symbol": "Symbol",
+                "name": "Name",
+                "lastSalePrice": "Last",
+                "lastSaleChange": "Change",
+                "change": "% Change"
+              },
+              "rows": [
+                {
+                  "symbol": "INTC",
+                  "name": "Intel Corporation",
+                  "lastSalePrice": "$21.21",
+                  "lastSaleChange": "-7.83",
+                  "change": "-26.97%",
+                  "deltaIndicator": "down"
+                },
+                {
+                  "symbol": "TEAM",
+                  "name": "Atlassian Corporation",
+                  "lastSalePrice": "$142.47",
+                  "lastSaleChange": "-30.77",
+                  "change": "-17.76%",
+                  "deltaIndicator": "down"
+                },
+                {
+                  "symbol": "SNBR",
+                  "name": "Sleep Number Corporation",
+                  "lastSalePrice": "$11.69",
+                  "lastSaleChange": "-2.46",
+                  "change": "-17.39%",
+                  "deltaIndicator": "down"
+                },
+                {
+                  "symbol": "TWST",
+                  "name": "Twist Bioscience Corporation",
+                  "lastSalePrice": "$43.87",
+                  "lastSaleChange": "-9.17",
+                  "change": "-17.29%",
+                  "deltaIndicator": "down"
+                },
+                {
+                  "symbol": "OLED",
+                  "name": "Universal Display Corporation",
+                  "lastSalePrice": "$177.69",
+                  "lastSaleChange": "-34.98",
+                  "change": "-16.45%",
+                  "deltaIndicator": "down"
+                }
+              ]
+            }
+          },
+          "MostActiveByDollarVolume": {
+            "dataAsOf": "Data as of Aug 2, 2024 4:00 PM ET",
+            "lastTradeTimestamp": "Aug 2, 2024 4:00 PM ET",
+            "table": {
+              "asOf": null,
+              "headers": {
+                "symbol": "Symbol",
+                "name": "Name",
+                "lastSalePrice": "Last",
+                "lastSaleChange": "Change",
+                "change": "% Change"
+              },
+              "rows": [
+                {
+                  "symbol": "NVDA",
+                  "name": "NVIDIA Corporation",
+                  "lastSalePrice": "$107.27",
+                  "lastSaleChange": "-1.94",
+                  "change": "-1.78%",
+                  "deltaIndicator": "down"
+                },
+                {
+                  "symbol": "AMZN",
+                  "name": "Amazon.com, Inc.",
+                  "lastSalePrice": "$167.90",
+                  "lastSaleChange": "-16.17",
+                  "change": "-8.78%",
+                  "deltaIndicator": "down"
+                },
+                {
+                  "symbol": "AAPL",
+                  "name": "Apple Inc.",
+                  "lastSalePrice": "$219.86",
+                  "lastSaleChange": "+1.50",
+                  "change": "+0.69%",
+                  "deltaIndicator": "up"
+                },
+                {
+                  "symbol": "TSLA",
+                  "name": "Tesla, Inc.",
+                  "lastSalePrice": "$207.67",
+                  "lastSaleChange": "-9.19",
+                  "change": "-4.24%",
+                  "deltaIndicator": "down"
+                },
+                {
+                  "symbol": "MSFT",
+                  "name": "Microsoft Corporation",
+                  "lastSalePrice": "$408.49",
+                  "lastSaleChange": "-8.62",
+                  "change": "-2.07%",
+                  "deltaIndicator": "down"
+                }
+              ]
+            }
+          },
+          "Nasdaq100Movers": {
+            "dataAsOf": "Data as of Aug 1, 2024 4:00 PM ET",
+            "lastTradeTimestamp": "Aug 1, 2024 4:00 PM ET",
+            "table": {
+              "asOf": null,
+              "headers": {
+                "symbol": "Symbol",
+                "name": "Name",
+                "lastSalePrice": "Last",
+                "lastSaleChange": "Change",
+                "change": "% Change"
+              },
+              "rows": [
+                {
+                  "symbol": "ADBE",
+                  "name": "Adobe Inc.",
+                  "lastSalePrice": "526.1700",
+                  "lastSaleChange": "-20.2400",
+                  "change": "-3.70%",
+                  "deltaIndicator": "down"
+                },
+                {
+                  "symbol": "AMD",
+                  "name": "Advanced Micro Devices, Inc.",
+                  "lastSalePrice": "132.5000",
+                  "lastSaleChange": "-0.0400",
+                  "change": "-0.03%",
+                  "deltaIndicator": "down"
+                },
+                {
+                  "symbol": "ABNB",
+                  "name": "Airbnb, Inc.",
+                  "lastSalePrice": "128.2300",
+                  "lastSaleChange": "-6.8600",
+                  "change": "-5.08%",
+                  "deltaIndicator": "down"
+                },
+                {
+                  "symbol": "GOOG",
+                  "name": "Alphabet Inc.",
+                  "lastSalePrice": "168.4000",
+                  "lastSaleChange": "-4.0500",
+                  "change": "-2.35%",
+                  "deltaIndicator": "down"
+                },
+                {
+                  "symbol": "ZS",
+                  "name": "Zscaler, Inc.",
+                  "lastSalePrice": "169.5200",
+                  "lastSaleChange": "-4.9200",
+                  "change": "-2.82%",
+                  "deltaIndicator": "down"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "message": null,
+      "status": {
+        "rCode": 200,
+        "bCodeMessage": null,
+        "developerMessage": null
+      }
+    }
+  },
+  {
+    "request": {
+      "url": "https://api.nasdaq.com/api/quote/basic?&symbol=aapl%7cstocks&symbol=msft%7cstocks&symbol=amd%7cstocks&symbol=qqq%7cetf&symbol=btc%7ccrypto&symbol=ndx%7cindex&symbol=comp%7cindex&symbol=lbr%7ccommodities&symbol=tsla%7cstocks&symbol=amzn%7cstocks",
+      "params": {
+        "symbol": [
+          "aapl|stocks",
+          "msft|stocks",
+          "amd|stocks",
+          "qqq|etf",
+          "btc|crypto",
+          "ndx|index",
+          "comp|index",
+          "lbr|commodities",
+          "tsla|stocks",
+          "amzn|stocks"
+        ]
+      },
+      "headers": {
+        "content-type": "application/json; charset=utf-8",
+        "server": "Kestrel",
+        "lang": "en",
+        "srctype": "default",
+        "rid": "c4c69611-e45f-4d9e-8298-34701258aec2",
+        "gid": "201",
+        "content-encoding": "gzip",
+        "content-length": "814",
+        "x-edgeconnect-midmile-rtt": "37",
+        "x-edgeconnect-origin-mex-latency": "192",
+        "expires": "Sat, 03 Aug 2024 09:16:01 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "pragma": "no-cache",
+        "date": "Sat, 03 Aug 2024 09:16:01 GMT",
+        "vary": "Accept-Encoding",
+        "set-cookie": "ak_bmsc=FA3856723FD1E7949E016D03FEC90BCC~000000000000000000000000000000~YAAQec/bF2KTWAWRAQAAPEiGFxhUe+Xe+vjCO41mZNXxBqxB5IcH7zjNNbPbGDcXY/NeeO6erbpjk0ze6icjUtY5Moep5kvx2vies7Wissy8Mbp+J7PknDWUS+HViAR5DmAJQU7ZY4XHAFxB3DFEQLcRDJHz5cYqXEu1weoNpcedb7a+HmhokChPHitreJKAHULOikrlGCPO0Vv1XPdVySRnwFcJz4wdijtFRxhv37pdazKdNksK172cvODf9UCftgA8wYeKmwA3SYz+J6UuuQwrbuY31flK8TRbc48d2VGGirSTJV3Z9HDWn8l4R4YBdfg5OGTUlMV7/u2GX/RPQPjOaweOndTRdZt2akmv1Va4u/nE6UdACCKEb8SJTi4kCN/nZxLvT4I5Dw==; Domain=.nasdaq.com; Path=/; Expires=Sat, 03 Aug 2024 11:16:01 GMT; Max-Age=7200; HttpOnly",
+        "access-control-allow-origin": "https://www.nasdaq.com",
+        "strict-transport-security": "max-age=86400"
+      }
+    },
+    "response": {
+      "data": {
+        "date": "Data as of Aug 3, 2024 5:10 AM ET",
+        "records": [
+          {
+            "key": "AAPL|STOCKS",
+            "ticker": [
+              "AAPL",
+              "Apple Inc. Common Stock"
+            ],
+            "lastSale": "$219.86",
+            "change": "+1.50",
+            "pctChange": "+0.69%",
+            "deltaIndicator": "up",
+            "volume": "105,568,560",
+            "url": "/market-activity/stocks/aapl",
+            "assetclass": "STOCKS"
+          },
+          {
+            "key": "TSLA|STOCKS",
+            "ticker": [
+              "TSLA",
+              "Tesla, Inc. Common Stock"
+            ],
+            "lastSale": "$207.67",
+            "change": "-9.19",
+            "pctChange": "-4.24%",
+            "deltaIndicator": "down",
+            "volume": "82,880,120",
+            "url": "/market-activity/stocks/tsla",
+            "assetclass": "STOCKS"
+          },
+          {
+            "key": "AMZN|STOCKS",
+            "ticker": [
+              "AMZN",
+              "Amazon.Com, Inc. Common Stock"
+            ],
+            "lastSale": "$167.90",
+            "change": "-16.17",
+            "pctChange": "-8.78%",
+            "deltaIndicator": "down",
+            "volume": "141,448,365",
+            "url": "/market-activity/stocks/amzn",
+            "assetclass": "STOCKS"
+          },
+          {
+            "key": "MSFT|STOCKS",
+            "ticker": [
+              "MSFT",
+              "Microsoft Corporation Common Stock"
+            ],
+            "lastSale": "$408.49",
+            "change": "-8.62",
+            "pctChange": "-2.07%",
+            "deltaIndicator": "down",
+            "volume": "29,437,900",
+            "url": "/market-activity/stocks/msft",
+            "assetclass": "STOCKS"
+          },
+          {
+            "key": "AMD|STOCKS",
+            "ticker": [
+              "AMD",
+              "Advanced Micro Devices, Inc. Common Stock"
+            ],
+            "lastSale": "$132.50",
+            "change": "-0.04",
+            "pctChange": "-0.03%",
+            "deltaIndicator": "down",
+            "volume": "78,561,997",
+            "url": "/market-activity/stocks/amd",
+            "assetclass": "STOCKS"
+          },
+          {
+            "key": "QQQ|ETF",
+            "ticker": [
+              "QQQ",
+              "Invesco Qqq Trust, Series 1"
+            ],
+            "lastSale": "$448.75",
+            "change": "-10.91",
+            "pctChange": "-2.37%",
+            "deltaIndicator": "down",
+            "volume": "66,323,244",
+            "url": "/market-activity/etf/qqq",
+            "assetclass": "ETF"
+          },
+          {
+            "key": "BTC|CRYPTO",
+            "ticker": [
+              "BTC",
+              "Bitcoin"
+            ],
+            "lastSale": "$61,522.50",
+            "change": "-3,051.70",
+            "pctChange": "-4.73%",
+            "deltaIndicator": "down",
+            "volume": "",
+            "url": "/market-activity/cryptocurrency/btc",
+            "assetclass": "CRYPTO"
+          },
+          {
+            "key": "NDX|INDEX",
+            "ticker": [
+              "NDX",
+              "Nasdaq-100"
+            ],
+            "lastSale": "18,440.85",
+            "change": "-449.54",
+            "pctChange": "-2.38%",
+            "deltaIndicator": "down",
+            "volume": "",
+            "url": "/market-activity/index/ndx",
+            "assetclass": "INDEX"
+          },
+          {
+            "key": "COMP|INDEX",
+            "ticker": [
+              "COMP",
+              "Nasdaq Composite Index"
+            ],
+            "lastSale": "16,776.16",
+            "change": "-417.99",
+            "pctChange": "-2.43%",
+            "deltaIndicator": "down",
+            "volume": "5,917,673,376",
+            "url": "/market-activity/index/comp",
+            "assetclass": "INDEX"
+          },
+          {
+            "key": "LBR|COMMODITIES",
+            "ticker": [
+              "LBR",
+              "Lbr Sep 2024"
+            ],
+            "lastSale": "$505.00",
+            "change": "+4.50",
+            "pctChange": "+0.90%",
+            "deltaIndicator": "up",
+            "volume": "",
+            "url": "/market-activity/commodities/lbr",
+            "assetclass": "COMMODITIES"
+          }
+        ]
+      },
+      "message": null,
+      "status": {
+        "rCode": 200,
+        "bCodeMessage": null,
+        "developerMessage": null
+      }
+    }
+  },
+  {
+    "request": {
+      "url": "https://api.nasdaq.com/api/quote/indices?symbol=indu&symbol=ndx&symbol=comp&symbol=rut&symbol=spx",
+      "params": {
+        "symbol": [
+          "indu",
+          "ndx",
+          "comp",
+          "rut",
+          "spx"
+        ]
+      },
+      "headers": {
+        "content-type": "application/json; charset=utf-8",
+        "server": "Kestrel",
+        "lang": "en",
+        "srctype": "default",
+        "rid": "71d95f2b-0039-4342-a479-c28efd4ce3ee",
+        "cache-hit": "3002",
+        "gid": "204",
+        "content-encoding": "gzip",
+        "content-length": "507",
+        "expires": "Sat, 03 Aug 2024 09:16:02 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "pragma": "no-cache",
+        "date": "Sat, 03 Aug 2024 09:16:02 GMT",
+        "vary": "Accept-Encoding",
+        "set-cookie": "ak_bmsc=AA3AABEC08748C9CC22141EAEB003884~000000000000000000000000000000~YAAQec/bF3iTWAWRAQAAmEiGFxj6jIo86XUkRgHAc8O3cBc9f+dFsC5mZCuI8sa9RyvCHZODuIWwUp3dnzsoPyESQ3N6xtqs3H0GlMU/icra6MqdSebQMLmHXCoijRByHCTUdxM8Q8TlzEdosuKQ1/JJu6XcXdGmrXXjzgKZXh+oxXnX1iRoqZqXd9DUvptYYeXU0u2/0qTvnNJ3RFo4QRdZ0bHcIkvxH7vKwpcYf+T73u+OlWwZArx6g1ATUACB2W5+9rYetb7nQOtyOiJ+mfvPfRjvjINwXELADb+n7o3OT9P9TjunEnUBbOlPp0NUBfMBhkbOsS0MQo4XISDhXkmY0HtdZbd2XlmtiUhQyVw9isGRULVZ5DsuXi7XiHE3jGtzV+7nSGl55Q==; Domain=.nasdaq.com; Path=/; Expires=Sat, 03 Aug 2024 11:16:02 GMT; Max-Age=7200; HttpOnly",
+        "access-control-allow-origin": "https://www.nasdaq.com",
+        "strict-transport-security": "max-age=86400"
+      }
+    },
+    "response": {
+      "data": [
+        {
+          "symbol": "INDU",
+          "companyName": "Dow Industrials",
+          "lastSalePrice": "39,737.26",
+          "previousClose": "40,347.97",
+          "netChange": "-610.71",
+          "percentageChange": "-1.51%",
+          "volume": "0",
+          "deltaIndicator": "down",
+          "timeStamp": "Aug 2, 2024",
+          "datetime": "2024-08-02T17:08:00.6",
+          "indexCharts": null,
+          "chartOpenTime": 1722591000000,
+          "chartCloseTime": 1722614459000
+        },
+        {
+          "symbol": "COMP",
+          "companyName": "NASDAQ Composite Index",
+          "lastSalePrice": "16,776.16",
+          "previousClose": "17,194.15",
+          "netChange": "-417.99",
+          "percentageChange": "-2.43%",
+          "volume": "5,917,673,376",
+          "deltaIndicator": "down",
+          "timeStamp": "Aug 2, 2024",
+          "datetime": "2024-08-02T17:16:02",
+          "indexCharts": null,
+          "chartOpenTime": 1722591000000,
+          "chartCloseTime": 1722614459000
+        },
+        {
+          "symbol": "NDX",
+          "companyName": "NASDAQ-100",
+          "lastSalePrice": "18,440.85",
+          "previousClose": "18,890.39",
+          "netChange": "-449.54",
+          "percentageChange": "-2.38%",
+          "volume": "0",
+          "deltaIndicator": "down",
+          "timeStamp": "Aug 2, 2024",
+          "datetime": "2024-08-02T17:16:02",
+          "indexCharts": null,
+          "chartOpenTime": 1722591000000,
+          "chartCloseTime": 1722614459000
+        },
+        {
+          "symbol": "RUT",
+          "companyName": "Russell 2000",
+          "lastSalePrice": "2,109.31",
+          "previousClose": "2,186.16",
+          "netChange": "-76.85",
+          "percentageChange": "-3.52%",
+          "volume": "0",
+          "deltaIndicator": "down",
+          "timeStamp": "Aug 2, 2024",
+          "datetime": "2024-08-02T16:30:06",
+          "indexCharts": null,
+          "chartOpenTime": 1722591000000,
+          "chartCloseTime": 1722614459000
+        },
+        {
+          "symbol": "SPX",
+          "companyName": "S&P 500",
+          "lastSalePrice": "5,346.56",
+          "previousClose": "5,446.68",
+          "netChange": "-100.12",
+          "percentageChange": "-1.84%",
+          "volume": "0",
+          "deltaIndicator": "down",
+          "timeStamp": "Aug 2, 2024",
+          "datetime": "2024-08-02T17:08:00",
+          "indexCharts": null,
+          "chartOpenTime": 1722591000000,
+          "chartCloseTime": 1722614459000
+        }
+      ],
+      "message": null,
+      "status": {
+        "rCode": 200,
+        "bCodeMessage": null,
+        "developerMessage": null
+      }
+    }
+  },
+  {
+    "request": {
+      "url": "https://api.nasdaq.com/api/market-info",
+      "params": {},
+      "headers": {
+        "content-type": "application/json; charset=utf-8",
+        "server": "Kestrel",
+        "lang": "en",
+        "srctype": "default",
+        "rid": "0a9ad9ac-165f-4e78-8722-45888502838c",
+        "gid": "202",
+        "content-encoding": "gzip",
+        "content-length": "290",
+        "expires": "Sat, 03 Aug 2024 09:16:02 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "pragma": "no-cache",
+        "date": "Sat, 03 Aug 2024 09:16:02 GMT",
+        "vary": "Accept-Encoding",
+        "set-cookie": "ak_bmsc=511E6F143CA4354F9FB5C2782B380AC3~000000000000000000000000000000~YAAQec/bF+STWAWRAQAA8EmGFxiWAJmiPyYsN3L9nLhBcYdY25WJ8kLAq97gws+xVX3AxS6ReU/P6oVu45NMxATnvieo5WCqUCIaM4Qu87oPfMbTox7qB8FL3PoL86Fb8NqfxXXDNGOiERHevkQJHAtGlwpHSPBwLfYIfT4mGNqFLmYIZTvsbjAHbQXRVON//owFd295afwVRe/g2ZRcgWP8evdR8IT5RgkUTaHQ+O8vjmc4SAY8aEAcYgDbZm3IujF3KCY+Q+o6GYwsHl2ncF7xl42UAAEjcR6MWBF0xI5jFgk7EIshLGJu8k+N2axDW9zaAQtOmW+agl+Y9PytoosAfZUuixtGjPhHzQUbnCIj8VMnMd5qCdzb/S/2V6LVkWB1YDIfluJXrA==; Domain=.nasdaq.com; Path=/; Expires=Sat, 03 Aug 2024 11:16:02 GMT; Max-Age=7200; HttpOnly",
+        "access-control-allow-origin": "https://www.nasdaq.com",
+        "strict-transport-security": "max-age=86400"
+      }
+    },
+    "response": {
+      "data": {
+        "country": "U.S.",
+        "marketIndicator": "Market Closed",
+        "uiMarketIndicator": "Market Closed",
+        "marketCountDown": "Market Opens in 2D 4H 14M",
+        "preMarketOpeningTime": "Aug 5, 2024 04:00 AM ET",
+        "preMarketClosingTime": "Aug 5, 2024 09:30 AM ET",
+        "marketOpeningTime": "Aug 5, 2024 09:30 AM ET",
+        "marketClosingTime": "Aug 5, 2024 04:00 PM ET",
+        "afterHoursMarketOpeningTime": "Aug 5, 2024 04:00 PM ET",
+        "afterHoursMarketClosingTime": "Aug 5, 2024 08:00 PM ET",
+        "previousTradeDate": "Aug 1, 2024",
+        "nextTradeDate": "Aug 5, 2024",
+        "isBusinessDay": false,
+        "mrktStatus": "Closed",
+        "mrktCountDown": "Opens in 2D 4H 14M"
+      },
+      "message": null,
+      "status": {
+        "rCode": 200,
+        "bCodeMessage": null,
+        "developerMessage": null
+      }
+    }
+  }
+]
