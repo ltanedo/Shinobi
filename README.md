@@ -13,13 +13,13 @@ Shinobi uses selenium and selenium wire to intercept web requests using various 
 3. import library
    ```
    import shinobi
-   
-   
    ```
 5. Slow() function
    > Uses Selenium-Wire to loop and clean all requests
    ```
    shinobi.slow(url="https://www.nasdaq.com/market-activity/stocks")
+   ```
+   ```
    '''
    [
     {
@@ -43,6 +43,8 @@ Shinobi uses selenium and selenium wire to intercept web requests using various 
    > Dumps in-browser logs very quickly 30x
    ```
    shinobi.fast(url="https://www.nasdaq.com/market-activity/stocks")
+   ```
+   ```
    '''
    [
       {
